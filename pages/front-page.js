@@ -10,16 +10,16 @@ export default class FronPage {
 		return (
 			<RootContainer>
 
-	        <RootElement>
-	            <Header />
-	        </RootElement>
+				<RootElement>
+					<Header />
+				</RootElement>
 
-	        <RootElement>
-	            <Cover />
-	        </RootElement>
-	        <TheFold />
+				<RootElement>
+					<Cover />
+				</RootElement>
+				<TheFold />
 
-	    </RootContainer>
+			</RootContainer>
 		);
 	}
 
