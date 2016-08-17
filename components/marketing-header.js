@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import {logging} from 'react-server';
 
 const logger = logging.getLogger(__LOGGER__);
@@ -10,13 +11,30 @@ export default class MarketingHeader extends React.Component {
     /********** Methods **************/
 	}
 
+  componentDidMount(){
+    $(window).scroll(() => {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $(".marketing-header").addClass("opaque");
+        } else {
+            $(".marketing-header").removeClass("opaque");
+        }
+    });
+  }
+
 	render() {
 		return (
-			<div>
-				<div>Add Love</div>
+			<div className="row marketing-header">
+				<div className="header-right">
+          <div className="heart-image"></div>
+          <div>Add Love</div>
+        </div>
 
-        <div>Sign In</div>
-        <div>Sign up</div>
+        <div className="header-left">
+          <div>Sign In</div>
+          <div className="button round red">Sign up</div>
+        </div>
 			</div>
 			);
 	}

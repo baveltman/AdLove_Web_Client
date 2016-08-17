@@ -3,6 +3,7 @@ import {RootContainer, RootElement, TheFold} from "react-server";
 import Cover from '../components/cover';
 import Header from '../components/marketing-header'
 import '../build/styles/marketing-base.css'
+import '../build/styles/marketing-header.css'
 import '../build/styles/cover.css'
 
 export default class FronPage {
