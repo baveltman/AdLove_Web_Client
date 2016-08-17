@@ -16,6 +16,12 @@ npm start
 ```
 Then go to [localhost:3000](http://localhost:3000/).
 
+Hot loading for the js is enabled, but not for css yet. To rebuild css do:
+
+```shell
+./run-build.sh
+```
+
 #Notes:
 
 1. Routes are defined in root/routes.js
