@@ -3,10 +3,7 @@
 Setup:
 
 ```shell
-npm install -g yo
-npm install -g generator-react-server
-npm install -g node-sass
-npm install
+npm install -g yo generator-react-server node-sass && npm install
 ```
 
 To start in development mode:
