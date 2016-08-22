@@ -1,37 +1,37 @@
 $red-color: #d80027;
-
 .cover-copy {
     background-image: url(/images/marketing/restaurant_cover.jpg);
     background-size: 100% 100%;
     min-height: 775px;
+    color: transparent;
 }
 
-.cover-heading h1{
-  color: #fff;
-  font-size: 2em;
-  font-weight: bolder;
-  text-align: center;
-  margin-top: 12rem;
+.cover-heading h1 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 12rem;
 }
 
-.cover-input{
-  text-align: center;
+.cover-input {
+    text-align: center;
 }
 
-.cover-input input{
-  padding: 1em;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  width: 51em;
-  transition: border .5s ease;
-  margin-left: 1em;
-  margin-right: 1em;
+.cover-input input {
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 51em;
+    transition: border .5s ease;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.cover-input input:hover{
-  border: 1px solid $red-color;
+.cover-input input:hover {
+    border: 1px solid $red-color;
 }
 
-.cover-input input:focus{
-  outline: none;
+.cover-input input:focus {
+    outline: none;
 }

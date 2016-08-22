@@ -7,6 +7,7 @@ do
   file=$(basename "$filename")
   fileNoExt="${file%.*}"
   node-sass "$filename" "./build/styles/$fileNoExt.css"
+  css-beautify --replace $filename
 done
 
 #beautify pages
