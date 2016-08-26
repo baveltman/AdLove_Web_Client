@@ -1,5 +1,8 @@
+@import 'marketing-base.scss';
 $color-white: #fff;
 $color-opaque: #222;
+$tablet-width: 768px;
+$desktop-width: 1024px;
 .marketing-header {
     justify-content: space-between;
     align-items: center;
@@ -25,6 +28,12 @@ $color-opaque: #222;
     flex-direction: row;
     height: inherit;
     align-items: center;
+    @media #{$mobile} {
+        width: 60%;
+    }
+    @media #{$tablet} {
+        width: 60%;
+    }
 }
 
 .header-container {
@@ -45,6 +54,12 @@ $color-opaque: #222;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @media #{$mobile} {
+        width: 40%;
+    }
+    @media #{$tablet} {
+        width: 40%;
+    }
 }
 
 .header-left div {
@@ -53,4 +68,8 @@ $color-opaque: #222;
 
 .logo {
     font-size: 1.3em;
+}
+
+.sign-in:hover {
+    cursor: pointer;
 }

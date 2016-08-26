@@ -1,5 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 $default-button-color: #c0392b;
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+$mobile: "(max-width: 480px)";
 $red-color: #c0392b;
 $white-color: #fff;
 .page-body {
