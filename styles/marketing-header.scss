@@ -10,7 +10,7 @@ $color-opaque: #222;
     width: 100%;
     color: $color-white;
     transition: background-color .5s ease;
-    padding-top: .5em;
+    padding-top: .7em;
     padding-bottom: .5em;
     z-index: 100;
 }
@@ -25,6 +25,12 @@ $color-opaque: #222;
     flex-direction: row;
     height: inherit;
     align-items: center;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
 }
 
 .header-right .heart-image {
@@ -43,4 +49,8 @@ $color-opaque: #222;
 
 .header-left div {
     margin-right: 1em;
+}
+
+.logo {
+    font-size: 1.3em;
 }

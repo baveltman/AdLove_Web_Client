@@ -10,7 +10,7 @@ import '../build/styles/marketing-base.css'
 import '../build/styles/marketing-header.css'
 import '../build/styles/cover.css'
 
-export default class FronPage {
+export default class FrontPage {
     getElements() {
         return (
             <RootContainer>
@@ -33,7 +33,7 @@ export default class FronPage {
     }
 
     getTitle() {
-        return "AddLove - see what customers are saying about you"
+        return "Albert - Your Friendly Review Assistant"
     }
 
     getBodyClasses() {
@@ -52,7 +52,7 @@ export default class FronPage {
             content: 'width=device-width, initial-scale=1'
         }, {
             name: 'description',
-            content: 'AddLove - see what customers are saying about you'
+            content: 'Albert - Your Friendly Review Assistant'
         }, ];
     }
 }

@@ -1,9 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
 $default-button-color: #c0392b;
 $red-color: #c0392b;
 $white-color: #fff;
 .page-body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 
@@ -27,7 +27,7 @@ $white-color: #fff;
 }
 
 .round {
-    border-radius: 16px;
+    border-radius: 10px;
 }
 
 .red {
