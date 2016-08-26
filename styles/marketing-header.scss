@@ -1,19 +1,18 @@
 $color-white: #fff;
 $color-opaque: #222;
-
-.marketing-header{
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  height: 50px;
-  font-size: .9em;
-  position: fixed;
-  width: 100%;
-  color: $color-white;
-  transition: background-color .5s ease;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  z-index: 100;
+.marketing-header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 50px;
+    font-size: .9em;
+    position: fixed;
+    width: 100%;
+    color: $color-white;
+    transition: background-color .5s ease;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    z-index: 100;
 }
 
 .marketing-header.opaque {

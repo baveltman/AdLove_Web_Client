@@ -3,7 +3,7 @@
 Setup:
 
 ```shell
-npm install -g yo generator-react-server node-sass && npm install
+npm install -g yo generator-react-server node-sass && npm install && npm install -g css-beautify && npm install -g js-beautify
 ```
 
 To start in development mode:
