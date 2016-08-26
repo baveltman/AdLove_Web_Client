@@ -1,31 +1,33 @@
 import React from 'react';
 import $ from 'jquery';
-import {logging} from 'react-server';
+import {
+    logging
+} from 'react-server';
 
 const logger = logging.getLogger(__LOGGER__);
 
 export default class MarketingHeader extends React.Component {
-	constructor(props) {
-		super(props);
+    constructor(props) {
+        super(props);
 
-    /********** Methods **************/
-	}
+        /********** Methods **************/
+    }
 
-  componentDidMount(){
-    $(window).scroll(() => {
-        var scroll = $(window).scrollTop();
+    componentDidMount() {
+        $(window).scroll(() => {
+            var scroll = $(window).scrollTop();
 
-        if (scroll >= 100) {
-            $(".marketing-header").addClass("opaque");
-        } else {
-            $(".marketing-header").removeClass("opaque");
-        }
-    });
-  }
+            if (scroll >= 100) {
+                $(".marketing-header").addClass("opaque");
+            } else {
+                $(".marketing-header").removeClass("opaque");
+            }
+        });
+    }
 
-	render() {
-		return (
-			<div className="row marketing-header">
+    render() {
+        return (
+            <div className="row marketing-header">
 				<div className="header-right">
           <div className="heart-image"></div>
           <div>Add Love</div>
@@ -36,6 +38,6 @@ export default class MarketingHeader extends React.Component {
           <div className="button round red">Sign up</div>
         </div>
 			</div>
-			);
-	}
+        );
+    }
 }

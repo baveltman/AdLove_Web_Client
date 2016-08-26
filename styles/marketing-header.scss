@@ -16,32 +16,32 @@ $color-opaque: #222;
   z-index: 100;
 }
 
-.marketing-header.opaque{
-  background-color: $color-opaque;
+.marketing-header.opaque {
+    background-color: $color-opaque;
 }
 
-.header-right{
-  width: 85%;
-  display: flex;
-  flex-direction: row;
-  height: inherit;
-  align-items: center;
+.header-right {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    align-items: center;
 }
 
-.header-right .heart-image{
-  content: url(/images/marketing/heart.svg);
-  width: 2em;
-  margin-right: .5em;
-  margin-left: 1em;
+.header-right .heart-image {
+    content: url(/images/marketing/heart.svg);
+    width: 2em;
+    margin-right: .5em;
+    margin-left: 1em;
 }
 
-.header-left{
-  width: 15%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.header-left {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.header-left div{
-  margin-right: 1em;
+.header-left div {
+    margin-right: 1em;
 }

@@ -5,32 +5,32 @@ $red-color: #c0392b;
     width: 100%;
 }
 
-.cover-heading{
-  position: absolute;
+.cover-heading h1 {
     color: #fff;
     font-size: 2em;
-    margin-top: 15%;
-    margin-left: 24%;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 12rem;
 }
 
-.cover-input{
-  position: absolute;
-  margin-top: 19%;
-  margin-left: 30%;
+.cover-input {
+    text-align: center;
 }
 
-.cover-input input{
-  padding: 1em;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  width: 51em;
-  transition: border .5s ease;
+.cover-input input {
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 51em;
+    transition: border .5s ease;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.cover-input input:hover{
-  border: 1px solid $red-color;
+.cover-input input:hover {
+    border: 1px solid $red-color;
 }
 
-.cover-input input:focus{
-  outline: none;
+.cover-input input:focus {
+    outline: none;
 }

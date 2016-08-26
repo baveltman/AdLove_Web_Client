@@ -1,37 +1,35 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
-
 $default-button-color: #c0392b;
 $red-color: #c0392b;
 $white-color: #fff;
-
-.page-body{
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
+.page-body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
-.row{
-  display: flex;
-  flex-direction: row;
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
-.button{
-  background: $default-button-color;
-  padding: .6em;
-  padding-left: .8em;
-  padding-right: .8em;
-  color: $white-color;
-  cursor: pointer;
-  transition: opacity .5s ease;
+.button {
+    background: $default-button-color;
+    padding: .6em;
+    padding-left: .8em;
+    padding-right: .8em;
+    color: $white-color;
+    cursor: pointer;
+    transition: opacity .5s ease;
 }
 
-.button:hover{
-  opacity: .8;
+.button:hover {
+    opacity: .8;
 }
 
 .round {
-  border-radius: 16px;
+    border-radius: 16px;
 }
 
-.red{
-  background: $red-color;
+.red {
+    background: $red-color;
 }
