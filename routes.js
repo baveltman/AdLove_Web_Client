@@ -1,7 +1,7 @@
 
 module.exports = {
 	routes: {
-		HelloWorld: {
+		HomePage: {
 			path: ['/'],
 			method: 'get',
 			page: './pages/front-page',
