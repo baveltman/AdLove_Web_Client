@@ -2,10 +2,11 @@ import React from 'react';
 import {
     logging
 } from 'react-server';
+import PlaceSearch from './place-search'
 
 const logger = logging.getLogger(__LOGGER__);
 
-export default class MarketingHeader extends React.Component {
+export default class Cover extends React.Component {
     constructor(props) {
         super(props);
 
@@ -23,7 +24,7 @@ export default class MarketingHeader extends React.Component {
             <h1>What Are Customers Saying About Your Business?</h1>
           </div>
           <div className="cover-input">
-            <input type="text" placeholder="Enter Business Name or Address..." />
+            <PlaceSearch />
           </div>
         </div>
       </div>
