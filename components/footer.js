@@ -14,7 +14,9 @@ export default class Footer extends React.Component {
         return (
             <div className="footer">
                 <div className="footer-container">
-                Albert © 2016.
+                    <div className="row">
+                    ©2016 Albert
+                    </div>
                 </div>
       </div>
         );
