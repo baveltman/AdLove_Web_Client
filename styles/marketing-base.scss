@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 
 /* Global Styles */
 
@@ -39,4 +40,18 @@ $opaque-color: #222;
 
 .red {
     background: $red-color;
+}
+
+.location-tag {
+    display: inline-block;
+    color: #fff;
+    color: #fff;
+    margin-left: 1rem;
+    background: #8e44ad;
+    padding: 5px 15px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    position: relative;
+    top: -5px;
 }

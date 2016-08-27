@@ -1,0 +1,30 @@
+@import 'marketing-base.scss';
+.restaurant-image {
+    background-image: url(/images/marketing/restaurant_cover.png);
+    background-size: 100%;
+    min-height: 200px;
+    color: transparent;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.restaurant-header {
+    margin-top: 1.8rem;
+    h1 {
+        text-align: left;
+        color: #fff;
+        display: inline-block;
+        margin-bottom: .1rem;
+    }
+    .address {
+        color: #fff;
+        font-size: 1rem;
+    }
+    .stars-container {
+        color: #fff;
+        margin-top: .5rem;
+    }
+}
