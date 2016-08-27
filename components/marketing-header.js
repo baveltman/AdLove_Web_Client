@@ -36,7 +36,7 @@ export default class MarketingHeader extends React.Component {
 
                     <div className="header-left">
                         <div className="sign-in">Login</div>
-                        <div className="button round red">Sign up</div>
+                        <div className="button round red">Request a Demo</div>
                     </div>
                 </div>
 			</div>
