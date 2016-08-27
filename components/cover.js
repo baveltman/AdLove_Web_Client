@@ -17,8 +17,8 @@ export default class MarketingHeader extends React.Component {
 					image
           <div className="cover-container">
             <div className="cover-heading">
-              <h1>Your Friendly Review Assistant</h1>
-              <h2>Automatically collect customer reviews where you need them most.</h2>
+              <h1>What are customers saying about you?</h1>
+              <h2>Automatically collect feedback from your most valuable customers with AdLove.</h2>
             </div>
             <div className="cover-input">
               <input type="text" placeholder="Enter Business Name or Address..." />

@@ -31,7 +31,7 @@ export default class MarketingHeader extends React.Component {
                 <div className="header-container">
                     <div className="header-right">
                         <div className="heart-image"></div>
-                        <div className="logo">Albert</div>
+                        <div className="logo">AdLove</div>
                     </div>
 
                     <div className="header-left">

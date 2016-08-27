@@ -36,7 +36,7 @@ export default class FrontPage {
     }
 
     getTitle() {
-        return "Albert - Your Friendly Review Assistant"
+        return "AdLove - Automatically collect feedback from your most valuable customers"
     }
 
     getBodyClasses() {
@@ -55,7 +55,7 @@ export default class FrontPage {
             content: 'width=device-width, initial-scale=1'
         }, {
             name: 'description',
-            content: 'Albert - Your Friendly Review Assistant'
+            content: 'Automatically collect feedback from your most valuable customers'
         }, ];
     }
 }
