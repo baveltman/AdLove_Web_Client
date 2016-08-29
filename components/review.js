@@ -20,7 +20,7 @@ export default class Review extends React.Component {
               <h1>Tanakasan</h1>
               <div className="location-tag">Restaurant</div>
               <div className="address">
-                <i className="material-icons">place</i>
+                <span className="location-icon"><i className="material-icons">place</i>
                 2121 6th Avenue, Seattle, WA 98121
               </div>
               <div className="stars-container">
