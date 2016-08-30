@@ -1,0 +1,65 @@
+@import 'colors.scss';
+@import 'screens.scss';
+.cover-input {
+    text-align: center;
+}
+
+.cover-input input {
+    padding: 1em;
+    border: 1px solid $white-color;
+    border-radius: 5px;
+    width: 37em;
+    font-size: .9em;
+    transition: border .5s ease;
+    margin-left: 1em;
+    margin-right: 1em;
+    @media #{$mobile} {
+        width: 23em;
+    }
+}
+
+.cover-input input:hover {
+    border: 1px solid $light-blue-hover-color;
+}
+
+.cover-input input:focus {
+    outline: none;
+}
+
+div.predictions {
+    display: flex;
+    justify-content: center;
+}
+
+ul.predictions {
+    padding: 0;
+    background: $white-color;
+    border: 1px solid $white-color;
+    border-radius: 5px;
+    width: 39em;
+    font-size: .9em;
+    margin-left: 1em;
+    margin-right: 1em;
+    list-style: none;
+    transition: border .5s ease;
+    @media #{$mobile} {
+        width: 23em;
+    }
+}
+
+ul.predictions:hover {
+    border: 1px solid $light-blue-hover-color;
+}
+
+ul.predictions li {
+    background: $white-color;
+    color: $dark-gray-color;
+    text-align: left;
+    padding: .5em;
+    transition: color .5s ease, background .5s ease;
+}
+
+ul.predictions li:hover {
+    cursor: pointer;
+    background: $light-blue-hover-color;
+}

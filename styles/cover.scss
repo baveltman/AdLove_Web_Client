@@ -1,4 +1,4 @@
-@import 'marketing-base.scss';
+@import 'colors.scss';
 .cover-copy {
     background-image: url(/images/marketing/restaurant_cover.png);
     background-size: 100% 100%;
@@ -12,7 +12,7 @@
     font-weight: 500;
     text-align: center;
     margin-top: 12rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .cover-heading h2 {
@@ -20,37 +20,11 @@
     color: #CCC;
     text-align: center;
     font-size: 1.1em;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
     line-height: 1.7rem;
 }
 
 .cover-container {
     width: 90%;
     margin: 0 auto;
-}
-
-.cover-input {
-    text-align: center;
-}
-
-.cover-input input {
-    padding: 1em;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 37em;
-    font-size: .9em;
-    transition: border .5s ease;
-    margin-left: 1em;
-    margin-right: 1em;
-    @media #{$mobile} {
-        width: 23em;
-    }
-}
-
-.cover-input input:hover {
-    border: 1px solid $red-color;
-}
-
-.cover-input input:focus {
-    outline: none;
 }

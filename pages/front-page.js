@@ -10,6 +10,7 @@ import Footer from '../components/footer';
 import '../build/styles/marketing-base.css';
 import '../build/styles/marketing-header.css';
 import '../build/styles/cover.css';
+import '../build/styles/places-search.css';
 import '../build/styles/footer.css';
 
 export default class FrontPage {

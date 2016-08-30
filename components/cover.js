@@ -2,6 +2,7 @@ import React from 'react';
 import {
     logging
 } from 'react-server';
+import PlaceSearch from './places-search'
 
 const logger = logging.getLogger(__LOGGER__);
 
@@ -21,7 +22,7 @@ export default class MarketingHeader extends React.Component {
               <h2>Automatically collect feedback from your most valuable customers with AdLove.</h2>
             </div>
             <div className="cover-input">
-              <input type="text" placeholder="Enter Business Name or Address..." />
+              <PlaceSearch />
             </div>
           </div>
         </div>
