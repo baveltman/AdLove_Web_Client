@@ -47,9 +47,9 @@ export default class PlaceSearch extends React.Component {
         };
 
         this.updatePredictions = (predictions) => {
-                this.setState({
-                    predictions: predictions
-                })
+            this.setState({
+                predictions: predictions
+            })
         };
 
         this.renderPredictions = () => {
