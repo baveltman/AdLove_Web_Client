@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup';
 import {
     logging
 } from 'react-server';
@@ -30,25 +31,25 @@ export default class PlaceSearch extends React.Component {
             let search = searchInput ? searchInput.val() : "";
 
             if (search) {
-                //TODO: change the backend service to come from env vars
-                let getUrl = "http://138.68.54.190:8080/places?search=" + search;
+                let getUrl = "/api/places?search=" + search;
                 Ajax.GET(getUrl)
                     .then((response) => {
-                        if (response && response.Predictions) {
-                            this.updatePredictions(response.Predictions)
+                        let isValidResponse = response && response.body && response.body.Predictions;
+                        if (isValidResponse) {
+                            this.updatePredictions(response.body.Predictions)
                         }
                     }).catch(err => {
                         console.error(err);
                     })
+            } else {
+                this.updatePredictions(null);
             }
         };
 
         this.updatePredictions = (predictions) => {
-            if (predictions) {
                 this.setState({
                     predictions: predictions
                 })
-            }
         };
 
         this.renderPredictions = () => {
@@ -57,7 +58,7 @@ export default class PlaceSearch extends React.Component {
 
             if (predictions) {
                 predictions.forEach((prediction) => {
-                    //TODO: program each onclick of prediction to redirect to review aggregation page 
+                    //TODO: program each onclick of prediction to redirect to review aggregation page
                     predictionResults.push(
                         <li key={prediction.place_id}>
                           {prediction.description}
@@ -68,16 +69,25 @@ export default class PlaceSearch extends React.Component {
 
             if (predictionResults.length > 0) {
                 return (
-                    <ul className="predictions">
+                    <ul className="predictions" key={"predictions"}>
                       {predictionResults}
                     </ul>
                 );
             } else if (predictions) {
                 return (
-                    <ul className="predictions">
+                    <ul className="predictions" key={"no-predictions"}>
                   {"No Results"}
                 </ul>
                 );
+            }
+        };
+
+        this.closeIfEmpty = () => {
+            let searchInput = $("#" + this.PLACE_SEARCH_INPUT);
+            if (!searchInput || !searchInput.val()) {
+                this.setState({
+                    predictions: null
+                });
             }
         };
     }
@@ -85,9 +95,15 @@ export default class PlaceSearch extends React.Component {
     render() {
         return (
             <div>
-              <input id={this.PLACE_SEARCH_INPUT} type="text" placeholder="Enter Business Name or Address..." onChange={this.searchPlaceDebounced} />
+              <input id={this.PLACE_SEARCH_INPUT}
+                type="text"
+                placeholder="Enter Business Name or Address..."
+                onChange={this.searchPlaceDebounced}
+                onBlur={this.closeIfEmpty} />
               <div className="predictions">
-                {this.renderPredictions()}
+                <ReactCSSTransitionGroup transitionName="animate-opacity" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+                  {this.renderPredictions()}
+                </ReactCSSTransitionGroup>
               </div>
             </div>
         );
