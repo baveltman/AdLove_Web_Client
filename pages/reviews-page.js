@@ -4,29 +4,22 @@ import {
     RootElement,
     TheFold
 } from "react-server";
-import Cover from '../components/cover';
-import Header from '../components/marketing-header';
 import Footer from '../components/footer';
 import '../build/styles/marketing-base.css';
-import '../build/styles/marketing-header.css';
-import '../build/styles/cover.css';
-import '../build/styles/places-search.css';
 import '../build/styles/footer.css';
 
-export default class FrontPage {
+export default class ReviewsPage {
     getElements() {
         return (
             <RootContainer>
 
 				<RootElement>
-					<Header />
+					<div>Reviews Page</div>
 				</RootElement>
 
-				<RootElement>
-					<Cover />
-				</RootElement>
-				<TheFold />
-                <Footer />
+        <TheFold />
+
+        <Footer />
 
 			</RootContainer>
         );

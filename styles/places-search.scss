@@ -60,6 +60,11 @@ ul.predictions li {
     transition: color .5s ease, background .5s ease;
 }
 
+ul.predictions li a {
+    color: $dark-gray-color;
+    text-decoration: none;
+}
+
 ul.predictions li:hover {
     cursor: pointer;
     background: $light-blue-hover-color;

@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup';
 import {
-    logging
+    logging,
+    Link
 } from 'react-server';
 import debounce from 'debounce'
 import $ from 'jquery'
@@ -61,7 +62,7 @@ export default class PlaceSearch extends React.Component {
                     //TODO: program each onclick of prediction to redirect to review aggregation page
                     predictionResults.push(
                         <li key={prediction.place_id}>
-                          {prediction.description}
+                          <Link path={`/reviews/${prediction.place_id}`} bundleData={true}>{prediction.description}</Link>
                         </li>
                     )
                 })
